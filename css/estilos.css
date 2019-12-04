@@ -5,6 +5,7 @@
 body {
 	display: block;
 	background: linear-gradient(to bottom, #648caa, #cef1f1);
+	/*min-width: 950px;*/
 }
 /* ----------------------------CSS Para la estructura de la pagina----------------------------------- */
 .contenedor{
@@ -16,10 +17,10 @@ body {
 	/* grid-template-rows: repeat(4, 1fr);      Problema con el tamaño automatico de cada fraccion*/ 
 	background-color: #183046;
 	grid-row-gap: 5px;
-	grid-template-areas: "header 		header 			header"
-	"contenido 	contenido 		sidebar-1"
-	"contenido 	contenido 		sidebar-2"
-	"footer 		footer 			footer"
+	grid-template-areas:"header 	header 		header"
+						"contenido 	contenido 	sidebar-1"
+						"contenido 	contenido 	sidebar-2"
+						"footer 	footer 		footer"
 
 }
 .contenedor .header{
@@ -63,12 +64,12 @@ body {
 
 
 
-@media screen  and (max-width: 900px){
+@media screen  and (max-width: 980px){
 	.contenedor{
-		grid-template-areas: "header 		header 			header"
-		"contenido 	contenido 		contenido"
-		"sidebar-1 	sidebar-2 		sidebar-2"
-		"footer 		footer 			footer"
+		grid-template-areas:"header 	header 		header"
+							"contenido 	contenido 	contenido"
+							"sidebar-1 	sidebar-2 	sidebar-2"
+							"footer 	footer 		footer"
 	}
 }
 
