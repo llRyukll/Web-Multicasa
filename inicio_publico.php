@@ -90,7 +90,7 @@
 		</aside>
 
 		<footer class="footer">
-			<div class="logo-empresa">
+			<div class="logo-footer">
 				<img class="logo" src="images/logotipo.png">
 			</div>
 			<div class="menuFooter">
