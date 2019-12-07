@@ -8,7 +8,7 @@ body {
 }
 /* ----------------------------CSS Para la estructura de la pagina----------------------------------- */
 .contenedor{
-	width: 85%;
+	width: 100%;
 	max-width: 100%;
 	display: grid;
 	margin: auto auto;
@@ -17,8 +17,8 @@ body {
 	background-color: #183046;
 	grid-row-gap: 5px;
 	grid-template-areas: "header 		header 			header"
-	"contenido 	contenido 		sidebar-1"
-	"contenido 	contenido 		sidebar-2"
+	"contenido 	contenido 		contenido"
+	"contenido 	contenido 		contenido"
 	"footer 		footer 			footer"
 
 }
@@ -34,6 +34,8 @@ body {
 
 	background-color: white;
 	grid-area: contenido;
+	margin: 20px;
+	padding: 10px;
 }
 
 .contenedor .sidebar-1 {
