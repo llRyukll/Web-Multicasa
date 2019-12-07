@@ -75,25 +75,19 @@ body {
 /*--------------HEADER--------------------------------------------------------------------------------*/
 .logo-empresa {
 	color: white;
-	margin-top: 15px;	
-	overflow: hidden;
-	padding-bottom: 40px;
-
+	margin-top: 15px;
 }
 .logo-empresa .logotipo{
 	float: left;
 	margin-left: 40px;
 	width: 550px;
 	text-align: center;
-
 }
-
-.logo-footer .logo{
+.logo-empresa .logo{
 	float: left;
 	margin-left: 40px;
 	height: 50px;
 	margin-bottom: 20px;
-	margin-top: 15px;
 }
 .logo-empresa .tel{
 	float: right;
@@ -107,6 +101,7 @@ body {
 .menuHorizontal ul {
 	overflow: hidden;
 	list-style-type: none;
+	margin: 130px 0 0 3px;
 	padding: 0;
 	overflow: hidden;
 }
@@ -225,7 +220,6 @@ body {
 .menuFooter ul.topnav {
 	list-style-type: none;
 	margin: 0;
-	padding-top: 15px;
 	padding-left: 30px;
 	overflow: hidden;
 }

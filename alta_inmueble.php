@@ -43,7 +43,7 @@
 		<div class="signup-form contenido">
     		<h1>Registro de Nuevo Inmueble</h1>
     		<br>
-			<form onsubmit="return valida_registro();" action="class/test_altaInmueble.php" method="post">
+			<form onsubmit="return valida_registro();" action="class/test_altaInmueble.php" method="post" enctype="multipart/form-data">
 				<h5>Datos Generales del Inmueble</h5>
   				<div class="form-group">
     				<label for="encabezado">Encabezado</label>
@@ -145,15 +145,15 @@
     			</div>
     			<div class="form-group">
     				<label for="exterior">Vista Exterior</label>
-    				<input type="file" class="form-control-file" id="exterior" name="exterior" enctype="multipart/form-data">
+    				<input type="file" class="form-control-file" id="exterior" name="exterior">
     				<br>
     				<label for="interior1">Vista Interior 1</label>
-    				<input type="file" class="form-control-file" id="interior1" name="interior1" enctype="multipart/form-data">
+    				<input type="file" class="form-control-file" id="interior1" name="interior1">
     				<br>
     				<label for="interior2">Vista Interior 2</label>
-    				<input type="file" class="form-control-file" id="interior2" name="interior2" enctype="multipart/form-data">
+    				<input type="file" class="form-control-file" id="interior2" name="interior2">
     			</div>
-  				<button type="submit" class="btn btn-primary">Registrar Inmueble</button>
+  				<button type="submit" class="btn btn-primary" name="submit">Registrar Inmueble</button>
 			</form>
 		</div>
 		<footer class="footer">

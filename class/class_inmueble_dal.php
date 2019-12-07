@@ -30,10 +30,10 @@ class inmueble_dal extends class_Db
     }*/
 
     function insertar($obj){
-		$sql = "insert into inmueble (encabezado,descrpicion,direccion,costo_inmueble,recamaras,baños,estacionamientos,estatus,ciudad,estado,codigo_postal,area_terreno,email,latitud,longitud,exterior,interior_1,interior_2) ";
+		$sql = "insert into inmueble (encabezado,descripcion,direccion,costo_inmueble,recamaras,baños,estacionamientos,estatus,ciudad,estado,codigo_postal,area_terreno,email,latitud,longitud,exterior,interior_1,interior_2) ";
 		$sql .= "values(";
         $sql .= "'".$obj->getEncabezado()."',";
-    	$sql .= "'".$obj->getDescrpicion()."',";
+    	$sql .= "'".$obj->getDescripcion()."',";
         $sql .= "'".$obj->getDireccion()."',";
         $sql .= "'".$obj->getCosto_inmueble()."',";
         $sql .= "'".$obj->getRecamaras()."',";
@@ -42,14 +42,14 @@ class inmueble_dal extends class_Db
         $sql .= "'".$obj->getEstatus()."', ";
         $sql .= "'".$obj->getCiudad()."', ";
         $sql .= "'".$obj->getEstado()."', ";
-        $sql .= "'".$obj->getCodigo_postal()."' ";
+        $sql .= "'".$obj->getCodigo_postal()."', ";
         $sql .= "'".$obj->getArea_terreno()."', ";
         $sql .= "'".$obj->getEmail()."', ";
         $sql .= "'".$obj->getLatitud()."', ";
         $sql .= "'".$obj->getLongitud()."', ";
         $sql .= "'".$obj->getExterior()."', ";
         $sql .= "'".$obj->getInterior_1()."', ";
-        $sql .= "'".$obj->getInterior_2()."', ";
+        $sql .= "'".$obj->getInterior_2()."'";
         $sql .= ")";
 		//print $sql;exit;
 	   	$this->set_sql($sql);
