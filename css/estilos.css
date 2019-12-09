@@ -10,7 +10,7 @@ body {
 .contenedor{
 	width: 85%;
 	max-width: 100%;
-	min-width: 750px;
+	min-width: 790px;
 	display: grid;
 	margin: auto auto;
 	grid-template-columns: 1fr 1fr 280px ;
@@ -49,6 +49,7 @@ body {
 	min-height: 550px;
 	background-color: #3d6492;
 	grid-area: sidebar-2;
+	color: white;
 }
 
 .contenedor .footer {
@@ -199,7 +200,10 @@ body {
 	padding: 10px;
 	size: auto;
 }
-
+.sidebar-2 input{
+	background: #10476b;
+	color: #5492b1;sad
+}
 /*---------------FOOTER------------------------------------------------------------------------------*/
 .logo-footer{
     float: left;
@@ -210,7 +214,7 @@ body {
 }
 .menuFooter h5.fotterh5  {
 	color: orange;
-	padding-top: 14px;
+	padding-top: 15px;
 	float: left;
 }
 .menuFooter a{
@@ -257,10 +261,16 @@ body {
 	padding-right: 30px;
 }
 .copyright a{
-	color: orange;
+	color: #e97e00;
 	margin: 0;
+	text-decoration: underline;
 }
 .copyright p{
 	color: white;
+	margin: 0;
+}
+
+.copyright a:hover{
+	color: #f8ffbe;
 	margin: 0;
 }

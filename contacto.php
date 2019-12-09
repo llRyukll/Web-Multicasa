@@ -23,65 +23,65 @@
                 </div>
                 <div class="menuHorizontal">
                     <ul class="topnav">
-                        <li class="derecha"><a href="#">Inicio</a></li>
+                        <li class="derecha"><a href="inicio_publico.php">Inicio</a></li>
                         <li class="derecha"><a href="#">La Compañia</a></li>
                         <li class="derecha"><a href="#">Servicios</a></li>
                         <li class="derecha"><a href="#">Requisitos</a></li>
-                        <li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Admin.</a></li>
+                        <li class=" izquierda"><a href="login.php"><img class="incono-verde"src="images/icono_verde.png" >Admin.</a></li>
                         <li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Buscar</a></li>
-                        <li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Inicio</a></li>
+                        <li class=" izquierda"><a href="inicio_publico.php"><img class="incono-verde"src="images/icono_verde.png" >Inicio</a></li>
                     </ul>
                 </div>
             </header>
             <div class="contenido">
                 <div class="col-12 col-md-12 col-lg-12 py-3" id="main">
-    <form action="mail.php" method="post">
-        <div class="card border-primary rounded-0">
-            <div class="card-header p-0">
-                <div class="bg-info text-white text-center py-2">
-                    <h2 style="font-size: 40px"><i class="fa fa-envelope"></i> Contáctanos</h2>
-                    <h4 style="padding: 0; text-align: center">Con gusto te ayudaremos</h4>
-                </div>
-            </div>
-            <div class="card-body p-3">
+                    <form action="mail.php" method="post">
+                        <div class="card border-primary rounded-0">
+                            <div class="card-header p-0">
+                                <div class="bg-info text-white text-center py-2">
+                                    <h2 style="font-size: 40px"><i class="fa fa-envelope"></i> Contáctanos</h2>
+                                    <h4 style="padding: 0; text-align: center">Con gusto te ayudaremos</h4>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
 
-                <!--Body-->
+                                <!--Body-->
 
-                <div class="form-group">
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                        </div>
+                                        <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Envíanos tu Mensaje" name = "mensaje" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
+                                </div>
+                            </div>
+
                         </div>
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
-                        </div>
-                        <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com" required>
-                    </div>
-                </div>
+                    </form>
+                    <br>
 
-                <div class="form-group">
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
-                        </div>
-                        <textarea class="form-control" placeholder="Envíanos tu Mensaje" name = "mensaje" required></textarea>
-                    </div>
                 </div>
-                <div class="text-center">
-                    <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
-                </div>
-            </div>
-
-        </div>
-    </form>
-    <br>
-
-</div>
             </div>
 
             <footer class="footer">
@@ -90,7 +90,7 @@
                 </div>
                 <div class="menuFooter">
                     <ul class="topnav">
-                        <li class="derecha"><a href="#">Inicio</a></li>
+                        <li class="derecha"><a href="inicio_publico.php">Inicio</a></li>
                         <h5 class="fotterh5">:</h5>
                         <li class="derecha"><a href="#"> Compra </a></li>
                         <h5 class="fotterh5">:</h5>
@@ -105,7 +105,7 @@
                         <li class="derecha"><a href="#"> Contactos </a></li>
                         <div class="copyright">
                             <p>Bienes Raíces Multicasa © 2019</p>
-                            <a href="">Politicas De Privacidad</a>              
+                            <a href="politicas.php">Politicas De Privacidad</a>              
                         </div>
                     </ul>
                 </div>

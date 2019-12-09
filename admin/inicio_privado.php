@@ -9,8 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/estilosAdmin.css">
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/icon-down-open.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
 
 </head>
 <body>
@@ -27,7 +28,7 @@
 
 				<nav class="menu">
 					<ul>
-						<li><a href="">Inicio</a></li>
+						<li><a href="inicio_privado.php">Inicio</a></li>
 						<li><a href="">La compañia</a></li>
 						<li class="submenu"><a>Acciones<span class="icon-down-openarrow"></span></a>
 							<ul>
@@ -42,7 +43,7 @@
 								<li><a href="">Dashboard</a></li>
 							</ul>
 						</li>
-						<li id="btn-admin"><a href="">Admin</a></li> 
+						<li id="btn-admin"><a href="login.php">Admin</a></li> 
 					</ul> 
 				</nav> 
 			</div>
@@ -75,7 +76,9 @@
 		</aside>
 
 		<aside class="sidebar-2">
-
+			<?php 
+				include ('../aside-2.php');
+			?>
 
 		</aside>
 
@@ -85,7 +88,8 @@
 			</div>
 			<div class="menuFooter">
 				<ul class="topnav1">
-					<li class="derecha"><a href="#">Inicio</a></li>
+					<h5 class="fotterh5">:</h5>
+					<li class="derecha"><a href="inicio_privado.php"> Inicio </a></li>
 					<h5 class="fotterh5">:</h5>
 					<li class="derecha"><a href="#"> Compra </a></li>
 					<h5 class="fotterh5">:</h5>
@@ -100,12 +104,11 @@
 					<li class="derecha"><a href="#"> Contactos </a></li>
 					<div class="copyright">
 						<p>Bienes Raíces Multicasa © 2019</p>
-						<a href="">Politicas De Privacidad</a>				
+						<a href="politicas.php">Politicas De Privacidad</a>				
 					</div>
 				</ul>
 			</div>
 		</footer>
-
 	</div>
 
 </body>

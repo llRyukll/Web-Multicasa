@@ -10,16 +10,16 @@
                     <label for="usr" id="city">Ciudad y Estado, o C.P.</label>
                     <input type="text" class="form-control" id="ciudad" name="info" required>
                     <label for="busqueda" id="range">Rango De Búsqueda</label>
-                    <input type="search" class="form-control" id="rangoBusqueda" name="rango">
+                    <input type="search" class="form-control" placeholder="Sin Rango" id="rangoBusqueda" name="rango">
                     <label for="rango2" id="range2">Rango De Precio De: - A:</label>
                     <div class="input-group">
-                        <input type="number" min="0" class="form-control" name="rango1" required>
-                        <input type="number" min="100000" class="form-control" name="rango2" required>
+                        <input type="number" min="0" class="form-control" placeholder="Todos"name="rango1" required>
+                        <input type="number" min="100000" class="form-control" placeholder="Todos" name="rango2" required>
                     </div>
                     <label for="recamaras" id="recamaras">Recámara(s)</label>
-                    <input type="number" min="1" class="form-control" id="recamaras" name="recamaras">
+                    <input type="number" min="1" class="form-control" placeholder="No importa" id="recamaras" name="recamaras">
                     <label for="banos" id="banos">Baños(s)</label>
-                    <input type="number" min="1" class="form-control" id="Banos" name="banos">
+                    <input type="number" min="1" class="form-control" placeholder="No importa" id="Banos" name="banos">
 
                     <br>
                     <div class="text-center">
@@ -30,21 +30,20 @@
             </form>
             <br>
             <br>
-            <br>
-            <br>
+
             <div class="text-center">
                 <label for="info" id="info">Información de Última Hora
                     <hr class="style2">
                 </label>
             </div>
             <label for="g1" id="g1">Nuevo Convenio A Casas Ecológicas.
-                <button type="button" class="btn btn-link" id="vermas">Ver Más...</button>
+                <button type="button" class="btn btn-link" id="vermas" style="color: yellow">Ver Más...</button>
             </label>
             <label for="g2" id="g2">Conoce Nuestros Planes De Descuento Para Trabajadores Del ISSSTE.
-                <button type="button" class="btn btn-link" id="vermas">Ver Más...</button>
+                <button type="button" class="btn btn-link" id="vermas" style="color: yellow">Ver Más...</button>
             </label>
             <label for="g3" id="g3">Enterate Como Puedes Pagar Tu Mensualidad Si Te Encuentras En El Extranjero.
-                <button type="button" class="btn btn-link" id="vermas">Ver Más...</button>
+                <button type="button" class="btn btn-link" id="vermas" style="color: yellow">Ver Más...</button>
             </label>
 
             <div class="text-center">

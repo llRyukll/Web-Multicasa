@@ -30,13 +30,13 @@
 			</div>
 			<div class="menuHorizontal">
 				<ul class="topnav">
-					<li class="derecha"><a href="#">Inicio</a></li>
+					<li class="derecha"><a href="inicio_privado.php">Inicio</a></li>
 					<li class="derecha"><a href="#">La Compañia</a></li>
 					<li class="derecha"><a href="#">Servicios</a></li>
 					<li class="derecha"><a href="#">Requisitos</a></li>
-					<li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Admin.</a></li>
+					<li class=" izquierda"><a href="login.php"><img class="incono-verde"src="images/icono_verde.png" >Admin.</a></li>
 					<li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Buscar</a></li>
-					<li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Inicio</a></li>
+					<li class=" izquierda"><a href="inicio_privado.php"><img class="incono-verde"src="images/icono_verde.png" >Inicio</a></li>
 				</ul>
 			</div>
 		</header>
