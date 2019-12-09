@@ -22,6 +22,7 @@
 }
 .menu {
     margin-top: 100px;
+    float: right;
 }
 
 .menu li {
@@ -47,8 +48,8 @@
 }
 .menu a {
   display: block;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  /*padding-top: 8px;
+  padding-bottom: 8px;*/
   color: white;
   text-decoration: none;
 }

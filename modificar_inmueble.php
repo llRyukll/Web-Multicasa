@@ -15,20 +15,20 @@
 	<div class="contenedor">
 		<header class="header">
 			<div class="logo-empresa">
-				<img class="logotipo" src="images/logo.png" style="width: 48%">
-				<img class="tel" src="images/tel.png" style="width: 18.3%">
+				<img class="logotipo" src="images/logo.png">
+				<img class="tel" src="images/tel.png" >
 				<!--<h1>&nbsp;&nbsp;BIENES RAICES MULTICASA</h1>
 					<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TU MEJOR OPCIÓN EN AGENCIA DE BIENES RAICES</h5>-->
 			</div>
 			<div class="menuHorizontal">
 				<ul class="topnav">
-					<li class="derecha"><a href="#">Inicio</a></li>
+					<li class="derecha"><a href="admin/inicio_privado.php">Inicio</a></li>
 					<li class="derecha"><a href="#">La Compañia</a></li>
 					<li class="derecha"><a href="#">Servicios</a></li>
 					<li class="derecha"><a href="#">Requisitos</a></li>
-					<li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Admin.</a></li>
+					<li class=" izquierda"><a href="admin/inicio_privado.php"><img class="incono-verde"src="images/icono_verde.png" >Admin.</a></li>
 					<li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Buscar</a></li>
-					<li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Inicio</a></li>
+					<li class=" izquierda"><a href="admin/inicio_privado.php"><img class="incono-verde"src="images/icono_verde.png" >Inicio</a></li>
 				</ul>
 			</div>
 		</header>
@@ -44,6 +44,7 @@
                   <th>Modificar</th>
                   <th>Eliminar</th>
                   <th>Títlo de la Publicación</th>
+                  <th>Estatus</th>
                   <th>Ciudad</th>
                   <th>Estado</th>
                   <th>Dirección</th>

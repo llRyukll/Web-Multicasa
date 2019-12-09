@@ -18,7 +18,7 @@
 		<header class="header">
 			<div class="logo-empresa">
 				<img class="logotipo" src="../images/logo.png" style="width: 48%">
-				<img class="tel" src="../images/tel.png" style="width: 18.3%">
+				<!--<img class="tel" src="../images/tel.png" style="width: 18.3%">-->
 			</div>
 
 			<div class="headerm">
@@ -31,18 +31,18 @@
 						<li><a href="">La compañia</a></li>
 						<li class="submenu"><a>Acciones<span class="icon-down-openarrow"></span></a>
 							<ul>
-								<li><a href="">Altas</a></li>
-								<li><a href="">Modificaciones</a></li>
-								<li><a href="">Bajas</a></li>
+								<li><a href="../alta_inmueble.php">Altas</a></li>
+								<li><a href="../modificar_inmueble.php">Modificaciones</a></li>
+								<li><a href="../modificar_inmueble.php">Bajas</a></li>
 							</ul>
 						</li>
 						<li class="submenu"><a>Reportes<span class="icon-down-openarrow"></span></a>
 							<ul>
-								<li><a href="">General</a></li>
-								<li><a href="">Dashboard</a></li>
+								<li><a href="reportepdf.php">General</a></li>
+								<li><a href="dashboard.php">Dashboard</a></li>
 							</ul>
 						</li>
-						<li id="btn-admin"><a href="">Admin</a></li> 
+						<li id="btn-admin"><a href="../inicio_publico.php">Cerrar</a></li> 
 					</ul> 
 				</nav> 
 			</div>

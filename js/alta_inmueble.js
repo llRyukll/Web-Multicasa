@@ -98,3 +98,12 @@ function valida_inmueble(){
 
     return true;
 }
+
+function validar_cp(evt){
+    var ch = String.fromCharCode(evt.which);
+
+    if(!(/[0-5]/.test(ch))){
+        evt.preventDefault();
+    }
+
+}

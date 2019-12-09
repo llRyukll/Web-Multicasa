@@ -61,7 +61,7 @@
   					</div>
   					<div class="form-group col-6 col-md-2">
     					<label for="codigoPostal">Código Postal</label>
-    					<input type="text" class="form-control" id="codigoPostal" name="codigoPostal" placeholder="C.P.">
+    					<input type="text" class="form-control" id="codigoPostal" name="codigoPostal" placeholder="C.P." pattern="[0-9]{5}" title = "El Código Postal deben ser 5 números." maxlength="5" onkeypress="validar_cp(event);">
   					</div>
   				</div>
   				<div class="form-row">
@@ -91,31 +91,31 @@
   				<div class="form-row">
   					<div class="form-group col-5 col-md-2">
     					<label for="costo">Costo</label>
-    					<input type="text" class="form-control" id="costo" name="costo" placeholder="Escriba el costo"></input>
+    					<input type="text" class="form-control" id="costo" name="costo" placeholder="Escriba el costo" maxlength="10" onkeypress="validar_cp(event);"></input>
     					<small id="ayudaCosto" class="form-text text-muted">Costo en MXN.</small>
     				</div>
     			</div>
   				<div class="form-row">
   					<div class="form-group col-4 col-md-3">
       					<label for="recamaras">No. de Recamaras</label>
-      					<input type="text" id="recamaras" name="recamaras" class="form-control" placeholder="# de recamaras">
+      					<input type="text" id="recamaras" name="recamaras" class="form-control" placeholder="# de recamaras" maxlength="3" onkeypress="validar_cp(event);">
       					</input>
     				</div>
     				<div class="form-group col-4 col-md-3">
       					<label for="baños">No. de Baños</label>
-      					<input type="text" id="baños" name="baños" class="form-control" placeholder="# de baños">
+      					<input type="text" id="baños" name="baños" class="form-control" placeholder="# de baños" maxlength="3" onkeypress="validar_cp(event);">
       					</input>
     				</div>
     				<div class="form-group col-4 col-md-3">
       					<label for="estacionamientos">No. de Estacionamientos</label>
-      					<input type="text" id="estacionamientos" name="estacionamientos" class="form-control" placeholder="# de estacionamientos">
+      					<input type="text" id="estacionamientos" name="estacionamientos" class="form-control" placeholder="# de estacionamientos" maxlength="3" onkeypress="validar_cp(event);">
       					</input>
     				</div>
   				</div>
   				<div class="form-row">
   					<div class="form-group col-6 col-md-3">
     					<label for="area">Área del terreno</label>
-    					<input type="text" class="form-control" id="area" name="area" placeholder="Escriba el área"></input>
+    					<input type="text" class="form-control" id="area" name="area" placeholder="Escriba el área" maxlength="5" onkeypress="validar_cp(event);"></input>
     					<small id="ayudaArea" class="form-text text-muted">Area en m2.</small>
     				</div>
     			</div>
