@@ -83,35 +83,29 @@ class inmueble_dal extends class_Db
 
 
 
-    //Trae los datos del alumno, de la tabla 'especiales'
-    /*function get_datos_alumno_especiales($matr)
+    //Trae los datos de la tabla inmuebles'
+    /*function get_datos_inmuebles()
     {
-        if ($this->existe_matricula_especiales($matr) > 0) {
+        $this->set_sql(
+            "SELECT encabezado, direccion, costo_inmueble, recamaras, baños, estacionamientos, ciudad, estado, area_terreno, estatus FROM inmueble 
+                    FROM inmueble"
+        );
 
-            $matr = $this->db_conn->real_escape_string($matr);
+        $rs = mysqli_query($this->db_conn, $this->db_query) or die(mysqli_error($this->db_conn));
+        $row = mysqli_fetch_assoc($rs);
 
-            $this->set_sql(
-                "SELECT matricula, cve_mat, email, telefono, estatus, grado, carrera, nombre 
-                        FROM especiales WHERE matricula = '$matr'"
-            );
+        $obj = new inmueble();
+        $obj->setEncabezado(utf8_encode($row['encabezado']));
+        $obj->setDireccion(utf8_encode($row['direccion']));
+        $obj->setCosto_inmueble($row['costo_inmueble']);
+        $obj->setRecamaras($row['recamaras']);
+        $obj->setBaños($row['baños']);
+        $obj->setEstacionamientos($row['estacionamientos']);
+        $obj->setCiudad(utf8_encode($row['ciudad']));
+        $obj->setEstado(utf8_encode($row['estado']));
+        $obj->setArea_terreno($row['area_terreno']);
+        $obj->setEstatus(utf8_encode($row['estatus']));
 
-            $rs = mysqli_query($this->db_conn, $this->db_query) or die(mysqli_error($this->db_conn));
-            $row = mysqli_fetch_assoc($rs);
-
-            $obj = new especiales();
-
-            $obj->setMatricula($row['matricula']);
-            $obj->setCveMateria($row['cve_mat']);
-            $obj->setEmail($row['email']);
-            $obj->setTelefono($row['telefono']);
-            $obj->setEstatus($row['estatus']);
-            $obj->setGrado($row['grado']);
-            $obj->setCarrera($row['carrera']);
-            $obj->setNombre(utf8_encode($row['nombre']));
-
-            return $obj;
-        } else {
-            return null;
-        }
+        return $resultado;
     }*/
 }

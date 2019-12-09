@@ -7,14 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css"> 
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+    
 </head>
 <body>
 	<div class="contenedor">
 		<header class="header">
 			<div class="logo-empresa">
-				<img class="logotipo" src="images/logo.png">
-				<img class="tel" src="images/tel.png" >
+				<img class="logotipo" src="images/logo.png" style="width: 48%">
+				<img class="tel" src="images/tel.png" style="width: 18.3%">
 				<!--<h1>&nbsp;&nbsp;BIENES RAICES MULTICASA</h1>
 					<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TU MEJOR OPCIÓN EN AGENCIA DE BIENES RAICES</h5>-->
 				</div>
@@ -23,7 +24,7 @@
 						<li class="derecha"><a href="#">Inicio</a></li>
 						<li class="derecha"><a href="#">La Compañia</a></li>
 						<li class="derecha"><a href="#">Servicios</a></li>
-						<li class="derecha"><a href="#">Requisitos</a></li>
+						<li class="derecha"><a href="contacto.php">Contacto</a></li>
 						<li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Admin.</a></li>
 						<li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Buscar</a></li>
 						<li class=" izquierda"><a href="#"><img class="incono-verde"src="images/icono_verde.png" >Inicio</a></li>
@@ -41,7 +42,7 @@
 			</div>
 			<img class="colash" src="images/colash_min_casas.png">
 
-			<h1>BIENVENIDO</h1>
+			<h1 style="right: 27px; position: relative">BIENVENIDO</h1>
 			<h5>¡A nuestro sitio WEB MultiCasa!</h5>
 
 			<p>
@@ -84,9 +85,9 @@
 		</aside>
 
 		<aside class="sidebar-2">
-			<div class="logo-lupa">
-				<img class="logo-lupa" src="images/busca_casa.png">
-			</div>				
+			<?php 
+				include ('aside-2.php');
+			?>			
 		</aside>
 
 		<footer class="footer">
@@ -99,7 +100,7 @@
 					<h5 class="fotterh5">:</h5>
 					<li class="derecha"><a href="#"> Compra </a></li>
 					<h5 class="fotterh5">:</h5>
-					<li class="derecha"><a href="#"> onstruir </a></li>
+					<li class="derecha"><a href="#"> Construir </a></li>
 					<h5 class="fotterh5">:</h5>
 					<li class="derecha"><a href="#"> Venta </a></li>
 					<h5 class="fotterh5">:</h5>

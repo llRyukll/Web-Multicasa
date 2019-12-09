@@ -17,8 +17,8 @@
 	<div class="contenedor">
 		<header class="header">
 			<div class="logo-empresa">
-				<img class="logotipo" src="../images/logo.png">
-				<img class="tel" src="../images/tel.png" >
+				<img class="logotipo" src="../images/logo.png" style="width: 48%">
+				<img class="tel" src="../images/tel.png" style="width: 18.3%">
 			</div>
 
 			<div class="headerm">

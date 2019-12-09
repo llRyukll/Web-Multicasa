@@ -15,8 +15,8 @@
 	<div class="contenedor">
 		<header class="header">
 			<div class="logo-empresa">
-				<img class="logotipo" src="images/logo.png">
-				<img class="tel" src="images/tel.png" >
+				<img class="logotipo" src="images/logo.png" style="width: 48%">
+				<img class="tel" src="images/tel.png" style="width: 18.3%">
 				<!--<h1>&nbsp;&nbsp;BIENES RAICES MULTICASA</h1>
 					<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TU MEJOR OPCIÓN EN AGENCIA DE BIENES RAICES</h5>-->
 			</div>
@@ -65,7 +65,7 @@
 					<h5 class="fotterh5">:</h5>
 					<li class="derecha"><a href="#"> Compra </a></li>
 					<h5 class="fotterh5">:</h5>
-					<li class="derecha"><a href="#"> onstruir </a></li>
+					<li class="derecha"><a href="#"> Construir </a></li>
 					<h5 class="fotterh5">:</h5>
 					<li class="derecha"><a href="#"> Venta </a></li>
 					<h5 class="fotterh5">:</h5>

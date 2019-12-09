@@ -1,0 +1,217 @@
+		* {
+			box-sizing: border-box;
+		}
+
+		header {
+			height: 8rem;
+		}
+
+		body {
+			background-color: #16496B;
+		}
+
+		h6 {
+			font-size: 8px;
+			color: lightblue;
+		}
+
+		h1 {
+			font-size: 29px;
+			margin-top: 10px;
+		}
+
+		#logo {
+			margin-left: 35px;
+			margin-top: 10px;
+		}
+
+		#tel {
+			background: white;
+			margin-top: 10px;
+			color: green;
+			font-size: 12px;
+			text-align: center;
+			align-content: center;
+			width: 100%;
+			height: auto;
+		}
+
+		#barra2 {
+			font-size: 12px;
+			text-align: right;
+		}
+
+		.vertical-menu a {
+			background-color: #3b96b9;
+			color: white;
+			display: block;
+			padding: 4px;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		.vertical-menu a:hover {
+			background-color: #16496B;
+		}
+
+		#main {
+			background-color: white;
+		}
+
+		#Bienvenido {
+			margin-top: 20px;
+			max-width: 100%;
+			height: auto;
+		}
+
+		#raton,
+		#raton2,
+		#fornais1 {
+			height: 300px;
+			width: 859px;
+		}
+
+		#menu2 {
+			background-color: #3D6492;
+			margin-top: 5px;
+		}
+
+		#llama {
+			color: green;
+		}
+
+		@media screen and (max-width: 600px) {
+			#topnav button {
+				float: none;
+				width: 100%;
+			}
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		/* Position the image container (needed to position the left and right arrows) */
+		.container {
+			position: relative;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+			display: none;
+		}
+
+		/* Add a pointer when hovering over the thumbnail images */
+		.cursor {
+			cursor: pointer;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 40%;
+			width: auto;
+			padding: 16px;
+			margin-top: -50px;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+			-webkit-user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/* Container for image text */
+		.caption-container {
+			text-align: center;
+			background-color: #222;
+			padding: 2px 16px;
+			color: white;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Six columns side by side */
+		.column {
+			float: left;
+			width: 16.66%;
+		}
+
+		/* Add a transparency effect for thumnbail images */
+		.demo {
+			opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+			opacity: 1;
+		}
+
+		#city,
+		#bath,
+		#range,
+		#room,
+		#range2,
+		#info,
+		#g1,
+		#g2,
+		#g3,
+		#visi,
+		#foot1,
+		#men1 {
+			color: white;
+		}
+
+		#foot2 {
+			color: orange;
+		}
+
+		hr.style2 {
+			border-top: 3px double white;
+			margin-top: 1px;
+		}
+
+		#vermas {
+			color: yellow;
+		}
+
+		.bg-gg {
+			background-color: #3D6492;
+		}
+
+		#casa {
+			font-family: 'Crete Round', serif;
+			font-size: 24px;
+			/* color: #DD7564; */
+
+			color: #B2DEDD
+				/* text-shadow: 2px 2px 2px #aaa; */
+
+		}

@@ -5,7 +5,7 @@
 
 }
 .headerm {
-  height: 50px;
+  height: 40px;
   /*background: linear-gradient(#1faad7, #2a6a92, #0076aa);*/
   color: white;
   align-items: center;
@@ -20,10 +20,16 @@
   cursor: pointer;
   display: none;
 }
+.menu {
+    margin-top: 100px;
+}
 
 .menu li {
   border: 1px  solid #10476b;
   background: linear-gradient(#1faad7, #2a6a92, #0076aa);
+  width: 130px;
+  text-align: center;
+
 
 }
 .menu ul{
@@ -36,14 +42,20 @@
   display: none;
   background: #006599;
 }
+.menu ul ul li{
+  background: transparent;
+}
 .menu a {
   display: block;
-  padding: 15px 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: white;
   text-decoration: none;
 }
-.menu a:hover {
-  background: rgb(0, 0, 0, 0.3)
+.menu li a:hover {
+  background-color: #111;
+  color: white;
+  text-decoration: none;
 }
 .menu a span {
   margin-left: 10px;
@@ -54,19 +66,25 @@
   position: absolute;
 }
 
-@media (max-width: 950px){
+@media (max-width: 650px){
   .headerm label {
     display: block;
     float: right;
     padding: 5px;
   }
+  .menu li {
+  border: 1px  solid #10476b;
+  background: transparent;
+  width: 100%;
+
+  }
   .menu {
-    
     top: 50px;
     left: 0;
     width: 40%;
     transform: translateX(-130%);
     transition: all 0.4s;
+    margin-top: 50px;
   }
   .menu ul {
     display: block;
@@ -96,6 +114,13 @@
 }
 
 /*---------------FOOTER------------------------------------------------------------------------------*/
+.logo-footer{
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
 .menuFooter h5.fotterh5  {
   color: orange;
   padding-top: 14px;
@@ -134,7 +159,7 @@
 
 .menuFooter ul.topnav1 li.right {float: right;}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .menuFooter ul.topnav1 li.right, 
   .menuFooter ul.topnav1 li {float: none;}
 }
