@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
-    
+
 </head>
 <body>
 	<div class="contenedor">
@@ -69,6 +69,9 @@
 				a great template..
 
 			</p>
+			<div class="embed-responsive embed-responsive-16by9">
+    		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SRG4-vTXa-M?controls=0"></iframe>
+  			</div>
 		</main>
 
 		<aside class="sidebar-1">
