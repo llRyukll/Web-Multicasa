@@ -6,24 +6,27 @@ body {
 	display: block;
 	background: linear-gradient(to bottom, #648caa, #cef1f1);
 }
-/* ----------------------------CSS Para la estructura de la pagina----------------------------------- */
-.g1 .g2 .g3 {
-	color:  white;
+
+footer {
+	background-color: #10476b;
 }
+
+header {
+	background-color: #10476b;
+}
+
+#mapid { height: 500px; }
+
+/* ----------------------------CSS Para la estructura de la pagina----------------------------------- */
 .contenedor{
-	width: 85%;
+	width: 100%;
 	max-width: 100%;
-	min-width: 790px;
 	display: grid;
 	margin: auto auto;
 	grid-template-columns: 1fr 1fr 280px ;
 	/* grid-template-rows: repeat(4, 1fr);      Problema con el tamaño automatico de cada fraccion*/ 
 	background-color: #183046;
 	grid-row-gap: 5px;
-	grid-template-areas: "header 		header 			header"
-	"contenido 	contenido 		sidebar-1"
-	"contenido 	contenido 		sidebar-2"
-	"footer 		footer 			footer"
 
 }
 .contenedor .header{
@@ -38,6 +41,8 @@ body {
 
 	background-color: white;
 	grid-area: contenido;
+	margin: 20px;
+	padding: 10px;
 }
 
 .contenedor .sidebar-1 {
@@ -49,10 +54,12 @@ body {
 	grid-area: sidebar-1;
 }
 .contenedor .sidebar-2 {
-	min-height: 550px;
+	min-height: 350px;
+	/*grid-column: 3;*/
+	/*grid-row: 3;*/
+
 	background-color: #3d6492;
 	grid-area: sidebar-2;
-	color: white;
 }
 
 .contenedor .footer {
@@ -65,7 +72,7 @@ body {
 
 
 
-@media screen  and (max-width: 970px){
+@media screen  and (max-width: 900px){
 	.contenedor{
 		grid-template-areas: "header 		header 			header"
 		"contenido 	contenido 		contenido"
@@ -203,21 +210,11 @@ body {
 	padding: 10px;
 	size: auto;
 }
-.sidebar-2 input{
-	background: #10476b;
-	color: #5492b1;sad
-}
+
 /*---------------FOOTER------------------------------------------------------------------------------*/
-.logo-footer{
-    float: left;
-    margin-left: 40px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-}
 .menuFooter h5.fotterh5  {
 	color: orange;
-	padding-top: 15px;
+	padding-top: 14px;
 	float: left;
 }
 .menuFooter a{
@@ -231,7 +228,7 @@ body {
 
 .menuFooter ul.topnav {
 	list-style-type: none;
-	margin-top: 10px;
+	margin: 0;
 	padding-left: 30px;
 	overflow: hidden;
 }
@@ -252,7 +249,7 @@ body {
 
 .menuFooter ul.topnav li.right {float: right;}
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 600px) {
 	.menuFooter ul.topnav li.right, 
 	.menuFooter ul.topnav li {float: none;}
 }
@@ -264,16 +261,10 @@ body {
 	padding-right: 30px;
 }
 .copyright a{
-	color: #e97e00;
+	color: orange;
 	margin: 0;
-	text-decoration: underline;
 }
 .copyright p{
 	color: white;
-	margin: 0;
-}
-
-.copyright a:hover{
-	color: #f8ffbe;
 	margin: 0;
 }

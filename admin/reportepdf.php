@@ -2,11 +2,26 @@
 <html>
 <!-- php para llenar el datatable  -->
 <?php 
-	$conexion=mysqli_connect('localhost','root','','multicasa');
+	/*$conexion=mysqli_connect('localhost','root','','multicasa');
 
 	$sql = "SELECT encabezado, direccion, costo_inmueble, recamaras, baños, estacionamientos, ciudad, estado, area_terreno, estatus FROM inmueble";
 
-	$result = mysqli_query($conexion, $sql);	
+	$result = mysqli_query($conexion, $sql);
+	echo '<script type="text/javascript">';
+    echo 'alert("';
+    echo $result;
+    echo '")';
+    echo '</script>';*/
+	
+	include("../class/class_inmueble_dal.php");//importar clase
+	$obj = new inmueble_dal();
+	
+
+	$query = "SELECT * FROM inmueble;";
+	$obj->set_sql($query);
+    $obj->db_conn->set_charset("utf8");
+    $resultado = mysqli_query($obj->db_conn,$obj->db_query) or die(mysqli_error($obj->db_conn));
+    //$row = mysqli_fetch_assoc($resultado)
 
 ?>
 <!-- fin del php para llenar el datatable  -->
@@ -37,7 +52,11 @@
 						<li class="derecha"><a href="#">La Compañia</a></li>
 						<li class="derecha"><a href="#">Servicios</a></li>
 						<li class="derecha"><a href="#">Requisitos</a></li>
+<<<<<<< HEAD
 						<li class=" izquierda"><a href="inicio_privado"><img class="incono-verde"src="../images/icono_verde.png" >Admin.</a></li>
+=======
+						<li class=" izquierda"><a href="inicio_privado.php"><img class="incono-verde"src="../images/icono_verde.png" >Admin.</a></li>
+>>>>>>> 206d3c6ef7bfd43a94b95da3be3b84587ed0e894
 						<li class=" izquierda"><a href="#"><img class="incono-verde"src="../images/icono_verde.png" >Buscar</a></li>
 						<li class=" izquierda"><a href="inicio_privado.php"><img class="incono-verde"src="../images/icono_verde.png" >Inicio</a></li>
 					</ul>
@@ -64,15 +83,15 @@
 							<tbody>
 								<?php 
 
-								while ($mostrar = mysqli_fetch_row($result)) 
+								while ($mostrar = mysqli_fetch_assoc($resultado)) 
 								{
 								?>
 									<tr>
-										<td><?php echo utf8_encode($mostrar['encabezado']) ?></td>
-										<td><?php echo utf8_encode($mostrar['direccion']) ?></td>
+										<td><?php echo $mostrar['encabezado'] ?></td>
+										<td><?php echo $mostrar['direccion'] ?></td>
 										<td><?php echo $mostrar['costo_inmueble'] ?></td>
 										<td><?php echo $mostrar['recamaras'] ?></td>
-										<td><?php echo $mostrar['baños'] ?></td>
+										<td><?php echo $mostrar['banos'] ?></td>
 										<td><?php echo $mostrar['estacionamientos'] ?></td>
 										<td><?php echo $mostrar['ciudad'] ?></td>
 										<td><?php echo $mostrar['estado'] ?></td>

@@ -19,7 +19,8 @@
 			$data['eliminar'] = "<td><a id='eliminar' onclick='return alerta();' class='btn btn-default' href='class/test_eliminarInmueble.php?id_inmueble=".$data['id_inmueble']."'>Eliminar</a></td>";
 			unset($data['id_inmueble']);
 			//$utfEncodedArray = array_map("utf8_encode", $data);
-			$arreglo["data"][] = array_map("utf8_encode", $data); //se guardan los datos en mi arreglo de datos
+			//$arreglo["data"][] = array_map("utf8_encode", $data); //se guardan los datos en mi arreglo de datos
+			$arreglo["data"][] = $data;
 			//print_r($utfEncodedArray);
 		}
 		echo json_encode($arreglo);// se convierte a json los datos del arreglo y lo imprime con echo

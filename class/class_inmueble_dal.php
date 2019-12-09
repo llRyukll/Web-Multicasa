@@ -30,7 +30,7 @@ class inmueble_dal extends class_Db
     }*/
 
     function insertar($obj){
-		$sql = "insert into inmueble (encabezado,descripcion,direccion,costo_inmueble,recamaras,baños,estacionamientos,estatus,ciudad,estado,codigo_postal,area_terreno,email,latitud,longitud,exterior,interior_1,interior_2) ";
+		$sql = "insert into inmueble (encabezado,descripcion,direccion,costo_inmueble,recamaras,banos,estacionamientos,estatus,ciudad,estado,codigo_postal,area_terreno,email,latitud,longitud,exterior,interior_1,interior_2) ";
 		$sql .= "values(";
         $sql .= "'".$obj->getEncabezado()."',";
     	$sql .= "'".$obj->getDescripcion()."',";
@@ -73,8 +73,8 @@ class inmueble_dal extends class_Db
         return $resultado;
     }
 
-    function actualizar($id_inmueble, $encabezado, $descripcion, $costo_inmueble, $email){
-        $sql = "UPDATE inmueble SET encabezado='$encabezado', descripcion='$descripcion', costo_inmueble='$costo_inmueble', email='$email' WHERE id_inmueble = '$id_inmueble'";
+    function actualizar($id_inmueble, $encabezado, $descripcion, $costo_inmueble, $email, $estatus){
+        $sql = "UPDATE inmueble SET encabezado='$encabezado', descripcion='$descripcion', costo_inmueble='$costo_inmueble', email='$email', estatus='$estatus' WHERE id_inmueble = '$id_inmueble'";
         $this->set_sql($sql);
         $this->db_conn->set_charset("utf8");
         $resultado = mysqli_query($this->db_conn,$this->db_query) or die(mysqli_error($this->db_conn));
@@ -84,56 +84,35 @@ class inmueble_dal extends class_Db
 
 
 
-<<<<<<< HEAD
-    //Trae los datos de la tabla inmuebles'
-    /*function get_datos_inmuebles()
-    {
-        $this->set_sql(
-            "SELECT encabezado, direccion, costo_inmueble, recamaras, baños, estacionamientos, ciudad, estado, area_terreno, estatus FROM inmueble 
-                    FROM inmueble"
-        );
-
-        $rs = mysqli_query($this->db_conn, $this->db_query) or die(mysqli_error($this->db_conn));
-        $row = mysqli_fetch_assoc($rs);
-
-        $obj = new inmueble();
-        $obj->setEncabezado(utf8_encode($row['encabezado']));
-        $obj->setDireccion(utf8_encode($row['direccion']));
-        $obj->setCosto_inmueble($row['costo_inmueble']);
-        $obj->setRecamaras($row['recamaras']);
-        $obj->setBaños($row['baños']);
-        $obj->setEstacionamientos($row['estacionamientos']);
-        $obj->setCiudad(utf8_encode($row['ciudad']));
-        $obj->setEstado(utf8_encode($row['estado']));
-        $obj->setArea_terreno($row['area_terreno']);
-        $obj->setEstatus(utf8_encode($row['estatus']));
-
-        return $resultado;
-    }*/
-}
-=======
     //Trae los datos del inmueble, de la tabla 'especiales'
     function get_datos_inmueble($datos,$precio_minimo,$precio_maximo,$recamaras,$baños){
-            $sql = ("SELECT * FROM inmueble WHERE codigo_postal = '$datos' OR ciudad LIKE '%$datos%' OR estado LIKE '%$datos%' AND costo_inmueble <= $precio_maximo AND recamaras = $recamaras and baños = $baños'");
-
+            $sql = ("SELECT * FROM inmueble WHERE codigo_postal = '$datos' OR ciudad LIKE '%$datos%' OR estado LIKE '%$datos%' AND costo_inmueble >= '$precio_minimo' AND costo_inmueble <= '$precio_maximo' AND recamaras = '$recamaras' and banos = '$baños'");
+            $this->set_sql($sql);
             $rs = mysqli_query($this->db_conn, $this->db_query) or die(mysqli_error($this->db_conn));
-
+            if($rs){
             while($row = mysqli_fetch_assoc($rs)){
 
 
             $obj = new inmueble();
 
-            $obj->setEstado($row['estado']);
-            $obj->setCiudad($row['ciudad']);
+            $obj->setEncabezado(utf8_encode($row['encabezado']));
+            $obj->setExterior(utf8_encode($row['exterior']));
+            $obj->setDescripcion(utf8_encode($row['descripcion']));
+            $obj->setEstado(utf8_encode($row['estado']));
+            $obj->setCiudad(utf8_encode($row['ciudad']));
             $obj->setCodigo_postal($row['codigo_postal']);
-            $obj->setprecio_minimo($row['precio_minimo']);
-            $obj->setPrecio_maximo($row['precio_maximo']);
+            $obj->setCosto_inmueble($row['costo_inmueble']);
             $obj->setRecamaras($row['recamaras']);
-            $obj->setBaños($row['baños']);
+            $obj->setBaños($row['banos']);
+            $arreglo = array();
             $arreglo[] = $obj;
             }
 
+            mysqli_free_result($rs);
             return $arreglo;
+        }
+        else {
+            return null;
         } 
     }
->>>>>>> bad8fac6dd2242eb7501a67ba259cf12bdb7a893
+}

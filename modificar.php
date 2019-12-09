@@ -60,7 +60,7 @@
 				<h5>Datos Generales del Inmueble</h5>
           <div class="form-group">
             <label for="id_inmueble">id Inmueble</label>
-            <input type="text" class="form-control" id="id_inmu" name="id_inmu" value="<?php echo $id_inmueble; ?>">
+            <input type="text" class="form-control" id="id_inmu" name="id_inmu" value="<?php echo $id_inmueble; ?>" disabled>
           </div>
   				<div class="form-group">
     				<label for="encabezado">Encabezado</label>
@@ -112,7 +112,7 @@
     				</div>
     				<div class="form-group col-4 col-md-3">
       					<label for="baños">No. de Baños</label>
-      					<input type="text" id="baños" name="baños" class="form-control" placeholder="# de baños" value="<?php echo $row['baños']; ?>" disabled>
+      					<input type="text" id="baños" name="baños" class="form-control" placeholder="# de baños" value="<?php echo $row['banos']; ?>" disabled>
       					</input>
     				</div>
     				<div class="form-group col-4 col-md-3">
@@ -162,6 +162,25 @@
     				<label for="interior2">Vista Interior 2</label>
     				<input type="file" class="form-control-file" id="interior2" name="interior2" disabled>
     			</div>
+          <div class="form-group col-6 col-md-4">
+              <label for="estado">Estatus</label>
+              <select id="estatus" name="estatus" class="form-control">
+              <option value="<?php echo $row['estatus']; ?>" selected><?php echo $row['estatus']; ?></option>
+              <option value="<?php if ($row['estatus'] == "En Venta") {
+                  echo "Vendida";
+                }
+                else{
+                    echo "En Venta";
+                  } ?>">
+                  <?php if ($row['estatus'] == "En Venta") {
+                    echo "Vendida";
+                  }
+                  else{
+                    echo "En Venta";
+                  } ?>
+              </option>
+              </select>
+          </div>
   				<button type="submit" class="btn btn-primary">Actualizar Datos</button>
 			</form>
 		</div>

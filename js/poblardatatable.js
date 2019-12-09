@@ -16,6 +16,7 @@ var listar = function(){
 		{data:"modificar"},
 		{data:"eliminar"},
 		{data:"encabezado"},
+		{data:"estatus"},
 		{data:"ciudad"},
 		{data:"estado"},
 		{data:"direccion"},
