@@ -78,6 +78,7 @@ class inmueble_dal extends class_Db
         $this->set_sql($sql);
         $this->db_conn->set_charset("utf8");
         $resultado = mysqli_query($this->db_conn,$this->db_query) or die(mysqli_error($this->db_conn));
+        //echo $resultado;
         return $resultado;
     }
 

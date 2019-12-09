@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2019-12-07 14:08:40
+Date: 2019-12-08 21:55:24
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -126,7 +126,7 @@ CREATE TABLE `inmueble` (
   `interior_1` varchar(255) DEFAULT NULL,
   `interior_2` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_inmueble`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of inmueble

@@ -43,7 +43,7 @@
 		<div class="signup-form contenido">
     		<h1>Registro de Nuevo Inmueble</h1>
     		<br>
-			<form onsubmit="return valida_registro();" action="class/test_altaInmueble.php" method="post" enctype="multipart/form-data">
+			<form onsubmit="return valida_inmueble();" action="class/test_altaInmueble.php" method="post" enctype="multipart/form-data">
 				<h5>Datos Generales del Inmueble</h5>
   				<div class="form-group">
     				<label for="encabezado">Encabezado</label>
@@ -166,7 +166,7 @@
 					<h5 class="fotterh5">:</h5>
 					<li class="derecha"><a href="#"> Compra </a></li>
 					<h5 class="fotterh5">:</h5>
-					<li class="derecha"><a href="#"> onstruir </a></li>
+					<li class="derecha"><a href="#"> Construir </a></li>
 					<h5 class="fotterh5">:</h5>
 					<li class="derecha"><a href="#"> Venta </a></li>
 					<h5 class="fotterh5">:</h5>

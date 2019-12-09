@@ -84,6 +84,18 @@
 	</div>
 	</div>
 </body>
+<script>
+function alerta() {
+  if(confirm("¿Estas seguro de eliminar el registro?")){
+  	//window.location.href = "delete.php";
+  	return true;
+  }
+  else{
+  	return false;
+  }
+}	
+</script>
+
 <script src="js/jquery-1.12.3.js"></script>
 <script src="js/jquery.dataTables.min.js"></script>
 <script src="bootstrap/js/dataTables.bootstrap.js"></script>
@@ -96,4 +108,5 @@
 <script type="text/javascript" src="js/vfs_fonts.js"></script>
 <script type="text/javascript" src="js/buttons.html5.min.js"></script>
 <script type="text/javascript" src="js/buttons.print.min.js"></script>
+
 </html>
