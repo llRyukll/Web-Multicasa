@@ -84,35 +84,27 @@ class inmueble_dal extends class_Db
 
 
 
-    //Trae los datos del alumno, de la tabla 'especiales'
-    /*function get_datos_alumno_especiales($matr)
-    {
-        if ($this->existe_matricula_especiales($matr) > 0) {
-
-            $matr = $this->db_conn->real_escape_string($matr);
-
-            $this->set_sql(
-                "SELECT matricula, cve_mat, email, telefono, estatus, grado, carrera, nombre 
-                        FROM especiales WHERE matricula = '$matr'"
-            );
+    //Trae los datos del inmueble, de la tabla 'especiales'
+    function get_datos_inmueble($datos,$precio_minimo,$precio_maximo,$recamaras,$baños){
+            $sql = ("SELECT * FROM inmueble WHERE codigo_postal = '$datos' OR ciudad LIKE '%$datos%' OR estado LIKE '%$datos%' AND costo_inmueble <= $precio_maximo AND recamaras = $recamaras and baños = $baños'");
 
             $rs = mysqli_query($this->db_conn, $this->db_query) or die(mysqli_error($this->db_conn));
-            $row = mysqli_fetch_assoc($rs);
 
-            $obj = new especiales();
+            while($row = mysqli_fetch_assoc($rs)){
 
-            $obj->setMatricula($row['matricula']);
-            $obj->setCveMateria($row['cve_mat']);
-            $obj->setEmail($row['email']);
-            $obj->setTelefono($row['telefono']);
-            $obj->setEstatus($row['estatus']);
-            $obj->setGrado($row['grado']);
-            $obj->setCarrera($row['carrera']);
-            $obj->setNombre(utf8_encode($row['nombre']));
 
-            return $obj;
-        } else {
-            return null;
-        }
-    }*/
-}
+            $obj = new inmueble();
+
+            $obj->setEstado($row['estado']);
+            $obj->setCiudad($row['ciudad']);
+            $obj->setCodigo_postal($row['codigo_postal']);
+            $obj->setprecio_minimo($row['precio_minimo']);
+            $obj->setPrecio_maximo($row['precio_maximo']);
+            $obj->setRecamaras($row['recamaras']);
+            $obj->setBaños($row['baños']);
+            $arreglo[] = $obj;
+            }
+
+            return $arreglo;
+        } 
+    }
