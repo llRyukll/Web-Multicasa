@@ -56,8 +56,12 @@
 		<div class="signup-form contenido">
     		<h1>Modificar Datos de un Inmueble</h1>
     		<br>
-			<form action="actualizar.php" method="post">
+			<form action="class/test_actualizarInmueble.php" method="post">
 				<h5>Datos Generales del Inmueble</h5>
+          <div class="form-group">
+            <label for="id_inmueble">id Inmueble</label>
+            <input type="text" class="form-control" id="id_inmu" name="id_inmu" value="<?php echo $id_inmueble; ?>">
+          </div>
   				<div class="form-group">
     				<label for="encabezado">Encabezado</label>
     				<input type="text" class="form-control" id="encabezado" name="encabezado" placeholder="Escriba el encabezado para la publicación del Inmueble" value="<?php echo $row['encabezado']; ?>">

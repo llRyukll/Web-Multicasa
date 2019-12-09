@@ -16,6 +16,7 @@ $(document).ready(function(){
         }
     });
 });
+
 //validar datos de alta_inmueble
 function valida_inmueble(){
     var js_enca = document.getElementById("encabezado").value.trim();
@@ -55,7 +56,7 @@ function valida_inmueble(){
         return false;
     }
 
-    else if (js_est.length == 0){
+    else if (js_estado == null || js_estado == 0){
         alert("Error: Campo 'ESTADO' no debe estar vacio");
         return false;
     }
@@ -79,25 +80,21 @@ function valida_inmueble(){
         return false;
     }
 
-     else if (js_area.length == 0){
+    else if (js_area.length == 0){
         alert("Error: Campo 'AREA' no debe estar vacio");
         return false;
     }
 
-     else if (js_latitud.length == 0){
+    else if (js_latitud.length == 0){
         alert("Error: Campo 'LATITUD' no debe estar vacio");
         return false;
     }
 
-     else if (js_longitud.length == 0){
+    else if (js_longitud.length == 0){
         alert("Error: Campo 'LONGITUD' no debe estar vacio");
         return false;
     }
 
-    if (validar_email(js_email) == false){
-        alert("Error: 'CORREO INVALIDO'");
-        return false;
-    }
 
     return true;
 }

@@ -16,7 +16,7 @@
 
 			//se hace un arreglo de datos ya que a sí trabaja un datable
 			$data['modificar'] = "<td><a class='btn btn-default' href='modificar.php?id_inmueble=".$data['id_inmueble']."'>Modificar</a></td>";
-			$data['eliminar'] = "<td><a id='eliminar' onclick='return alerta();' class='btn btn-default' href='delete.php?id_inmueble=".$data['id_inmueble']."' data-href='' data-toggle='modal' data-target='#confirm-delete'>Eliminar</a></td>";
+			$data['eliminar'] = "<td><a id='eliminar' onclick='return alerta();' class='btn btn-default' href='class/test_eliminarInmueble.php?id_inmueble=".$data['id_inmueble']."'>Eliminar</a></td>";
 			unset($data['id_inmueble']);
 			//$utfEncodedArray = array_map("utf8_encode", $data);
 			$arreglo["data"][] = array_map("utf8_encode", $data); //se guardan los datos en mi arreglo de datos
